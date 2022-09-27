@@ -1,2 +1,2 @@
-# dojo-cy-turma3
+# dojo-cy-t3
 dojo turma 3
