@@ -1,0 +1,24 @@
+{
+  "name": "dojo-cy-t3",
+  "version": "1.0.0",
+  "description": "doj0-cy-t3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarceloMarcos1973/dojo-cy-t3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarceloMarcos1973/dojo-cy-t3/issues"
+  },
+  "homepage": "https://github.com/MarceloMarcos1973/dojo-cy-t3#readme",
+  "dependencies": {
+    "cypress": "^10.8.0",
+    "faker-br": "^0.4.1"
+  }
+}
