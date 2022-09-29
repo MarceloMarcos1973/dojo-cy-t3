@@ -30,3 +30,19 @@ cy.get('[data-test="login-email"] > .MuiInputBase-root > .MuiInputBase-input').t
 cy.get('[data-test="login-password"] > .MuiInputBase-root > .MuiInputBase-input').type(senha)
 cy.get('[data-test="login-submit"]').click()
 })
+
+import user from "../fixtures/multi-usuario.json"
+Cypress.Commands.add('token', (usuario, senha) =>{
+    cy.request({
+        method: 'POST',
+        url: 'api/auth',
+        body: {
+            "email": user[1].usuario,
+            "password": user[1].senha
+        }
+
+    }).then((response) => {
+        expect(response.status).to.equal(200)
+        return response.body.jwt
+    })
+})
